@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bubble Pink</title>
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <link href="images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" type="image/png" />
+    <link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+    <link href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Baumans" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--<link href="css/index.css" rel="stylesheet">-->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollup.js"></script>
+    <script src="js/jquery.twzipcode.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $(function () {
+            $(".sidebar>.nav>li:eq(0)>a, .footnav>.nav>li:eq(1)>a").addClass("active");
+        });
+    </script>
+</head>
+
+<body>
+    <script src="js/header.js"></script>
+    <section id="content">
+        <div class="breadcrumb">
+            <a href="index.html">首頁</a>
+            <a href="member.html">會員中心</a>
+            <a>會員資料</a>
+        </div>
+        <div class="container member">
+            <h1>修改會員資料<span>My account</span></h1>
+            <div class="sidebar col-sm-2">
+                <ul class="nav">
+                    <li><a href="member.html">會員資料</a></li>
+                    <li><a href="member02.html">購買清單</a></li>
+                    <li><a href="member03.html">退款/退貨</a></li>
+                    <li><a href="member04.html">歷史訂單</a></li>
+                    <li><a href="member05.html">慾望清單</a></li>
+                </ul>
+            </div>
+            <div class="content col-sm-10">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">電子信箱</label>
+                        <div class="col-sm-10">
+                            <p class="form-control-static">roxanne@mor-e.com.tw</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">紅利點數</label>
+                        <div class="col-sm-10">
+                            <p class="form-control-static">100 點</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label">姓名 <span>*</span></label>
+                        <div class="col-sm-10">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="歐陽菲菲">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tel" class="col-sm-2 control-label">聯絡電話 <span>*</span></label>
+                        <div class="col-sm-10">
+                            <input type="tel" name="tel" id="tel" class="form-control" placeholder="0937-123321">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="col-sm-2 control-label">設定密碼 <span>*</span></label>
+                        <div class="col-sm-10">
+                            <input type="password" name="password" id="password" class="form-control" placeholder="********">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password2" class="col-sm-2 control-label">確認密碼 <span>*</span></label>
+                        <div class="col-sm-10">
+                            <input type="password" name="password2" id="password2" class="form-control" placeholder="********">
+                        </div>
+                    </div>
+                    <div class="form-group add">
+                        <label class="col-sm-2 control-label">地址</label>
+                        <div class="col-sm-10">
+                            <div id="twzipcode"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <input type="text" name="add" id="add" class="form-control" placeholder="台中市進化北路238號9樓之2">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="uniform" class="col-sm-2 control-label">三聯式發票</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="uniform" id="uniform" class="form-control" placeholder="統一編號">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <input type="text" name="invoice" id="invoice" class="form-control" placeholder="發票抬頭">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> 我要訂閱最新優惠訊息
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn2">確定修改</button>
+                        <button type="reset" class="btn">取消修改</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="js/footer.js"></script>
+    <a id="contact" href="contact.html"><img src="images/contact.png"></a>
+    <script>
+        $("#twzipcode").twzipcode({
+            countySel: "臺中市", // 城市預設值, 字串一定要用繁體的 "臺", 否則抓不到資料
+            districtSel: "北區", // 地區預設值
+            zipcodeSel: "404", // 地區預設值
+            zipcodeIntoDistrict: false, // 郵遞區號自動顯示在地區
+            css: ["county form-control", "district form-control", "zipcode form-control"], // 自訂 "城市"、"地區" class 名稱 
+            countyName: "county", // 自訂城市 select 標籤的 name 值
+            districtName: "district", // 自訂地區 select 標籤的 name 值
+            zipcodeName: "zipcode" // 自訂地區 select 標籤的 name 值
+        });
+    </script>
+</body>
+
+</html>

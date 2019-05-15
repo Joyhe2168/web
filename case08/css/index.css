@@ -1,0 +1,499 @@
+html,
+body {
+    overflow: hidden;
+}
+
+body {
+    padding-top: 0;
+}
+
+header {
+    position: relative;
+    overflow-y: hidden;
+}
+
+.item {
+    color: #231815;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.item a {
+    color: #231815;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+
+.com-left {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 99;
+    background: #000000;
+    animation-name: bgcolor;
+    animation-duration: 3s;
+    background-color: #000000;
+}
+
+@keyframes bgcolor {
+    0% {
+        height: 0%;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+.com-left a {
+    font-weight: 600;
+    display: inline-block;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 10px;
+    margin: 0 10px;
+    animation-name: text3;
+    animation-duration: 5s;
+}
+
+@keyframes text3 {
+    0% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.com-left a:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+.com-left .logo {
+    display: block;
+    padding: 0;
+    margin: 0 0 60px;
+    border: 0;
+    font-size: 0;
+}
+
+.com-left .logo:hover {
+    background: transparent;
+    color: transparent;
+}
+
+.fb {
+    width: 60px;
+}
+
+.item2 h2 {
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 1.2em;
+}
+
+.item2 span {
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0;
+}
+
+.item2 a {
+    font-size: 'Calibri';
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 15px;
+    margin-top: 30px;
+    width: 550px;
+    border-radius: 30px;
+}
+
+.com-top,
+.com-btm {
+    position: fixed;
+    right: 0;
+    width: 50%;
+    height: 50%;
+}
+
+
+/*top*/
+.com-top {
+    top: 0;
+    background: #ffdc1f;
+    animation-name: bgcolor2;
+    animation-duration: 3s;
+}
+
+@keyframes bgcolor2 {
+    0% {
+        right: -50%;
+        background-color: #ffffff;
+    }
+
+    100% {
+        right: 0;
+        background-color: #ffdc1f;
+    }
+}
+
+.com-top .item2 {
+    animation-name: text;
+    animation-duration: 5s;
+}
+
+@keyframes text {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.com-top h2 {
+    letter-spacing: 11px;
+    font-weight: 600;
+}
+
+.com-top a {
+    background: #f1c700;
+}
+
+.com-top a:hover {
+    color: #f1c700;
+    background: #000000;
+}
+
+
+/*btm*/
+.com-btm {
+    bottom: 0;
+    background: #ffffff;
+    animation-name: bgcolor3;
+    animation-duration: 3s;
+}
+
+@keyframes bgcolor3 {
+    0% {
+        right: 30%;
+        background-color: #ffdc1f;
+    }
+
+    100% {
+        right: 0;
+        background-color: #ffffff;
+    }
+}
+
+.com-btm .item2 {
+    animation-name: text2;
+    animation-duration: 5s;
+}
+
+@keyframes text2 {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.com-btm h2 {
+    letter-spacing: 8px;
+    font-weight: 600;
+}
+
+.com-btm a {
+    background: #f1f1f1;
+}
+
+.com-btm a:hover {
+    color: #f1f1f1;
+    background: #000000;
+}
+
+@media screen and (max-width: 1200px) {
+    .item2 a {
+        font-size: 20px;
+        width: 450px;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .com-left {
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 60%;
+    }
+
+    .com-top,
+    .com-btm {
+        width: 50%;
+        height: 40%;
+        top: auto;
+        bottom: 0;
+    }
+
+    .com-top {
+        right: auto;
+    }
+
+    .com-top h2 {
+        letter-spacing: 7px;
+    }
+
+    .com-btm {
+        left: auto;
+    }
+
+    .com-btm h2 {
+        letter-spacing: 4px;
+    }
+
+    .item2 h2 {
+        font-size: 22px;
+    }
+
+    .item2 span {
+        font-size: 20px;
+    }
+
+    .item2 a {
+        font-size: 16px;
+        width: 350px;
+    }
+
+    @keyframes bgcolor {
+        0% {
+            height: 0%;
+        }
+
+        100% {
+            height: 60%;
+        }
+    }
+
+    @keyframes bgcolor2 {
+        0% {
+            bottom: -40%;
+        }
+
+        100% {
+            bottom: 0;
+            background-color: #ffdc1f;
+        }
+    }
+
+    @keyframes bgcolor3 {
+        0% {
+            bottom: -40%;
+        }
+
+        100% {
+            bottom: 0;
+            background-color: #ffffff;
+        }
+    }
+
+    @keyframes text {
+        0% {
+            opacity: 0;
+        }
+
+        30% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes text2 {
+        0% {
+            opacity: 0;
+        }
+
+        60% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes text3 {
+        0% {
+            opacity: 0;
+        }
+
+        90% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        margin-top: 0;
+    }
+
+    .com-left {
+        height: 50%;
+    }
+
+    .com-left a {
+        font-size: 20px;
+    }
+
+    .com-left .logo {
+        margin-bottom: 30px;
+    }
+
+    .com-left .logo img {
+        width: 90%;
+    }
+
+    .com-top,
+    .com-btm {
+        width: 100%;
+        height: 25%;
+    }
+
+    .com-top {
+        top: auto;
+        bottom: 25%;
+        left: 0;
+        right: auto;
+    }
+
+    .com-btm {
+        bottom: 0;
+    }
+
+    @keyframes bgcolor {
+        0% {
+            height: 0%;
+        }
+
+        100% {
+            height: 50%;
+        }
+    }
+
+    @keyframes bgcolor2 {
+        0% {
+            bottom: 0;
+        }
+
+        100% {
+            bottom: 25%;
+            background-color: #ffdc1f;
+        }
+    }
+
+    @keyframes bgcolor3 {
+        0% {
+            bottom: -25%;
+        }
+
+        100% {
+            bottom: 0;
+            background-color: #ffffff;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    html,
+    body {
+        overflow-y: auto;
+    }
+
+    .com-left {
+        position: relative;
+        height: 500px;
+        display: block;
+        z-index: 2;
+    }
+
+    .com-top,
+    .com-btm {
+        position: relative;
+        height: 250px;
+    }
+
+
+    .com-left .logo img {
+        width: auto;
+    }
+
+    .com-left a {
+        margin-bottom: 20px;
+    }
+
+    .item2 h2 {
+        font-size: 20px;
+        width: 300px;
+    }
+
+    .item2 span {
+        font-size: 18px;
+    }
+
+    .item2 a {
+        width: 300px;
+    }
+
+    .fb,
+    .login-btn {
+        width: 80px;
+    }
+
+    .com-left,
+    .com-left a,
+    .com-top,
+    .com-top .item2,
+    .com-btm,
+    .com-btm .item2 {
+        animation: none;
+    }
+
+}

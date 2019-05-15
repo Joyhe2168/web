@@ -1,0 +1,171 @@
+#contact,
+.search,
+.member-btn,
+.menu,
+nav,
+.footertop,
+.smo {
+    display: none;
+}
+
+header {
+    border-bottom: 2px solid #c8c8c8;
+}
+
+footer {
+    border-top: 2px solid #c8c8c8;
+    padding: 50px 0 0;
+}
+
+#content {
+    min-height: 500px;
+}
+
+#content>.container {
+    width: 560px;
+    padding-bottom: 60px;
+}
+
+.logo,
+.copyright {
+    width: 100%
+}
+
+.copyright {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff6cb8;
+    padding: 15px 0;
+}
+
+h1.line {
+    border-bottom: 5px solid #ffa6c2;
+}
+
+h1 p {
+    padding-top: 30px;
+    color: #3e3a39;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.close_btn a {
+    display: inline-block;
+    padding: 20px 0;
+}
+
+@media (max-width: 560px) {
+    #content>.container {
+        width: 100%;
+    }
+}
+
+/*===================== Login =====================*/
+.login .control-label {
+    text-align: left;
+    padding-top: 0;
+    font-weight: normal;
+    font-size: 17px;
+    color: #888888;
+}
+
+.login .form-control {
+    font-size: 17px;
+    color: #888888;
+}
+
+.login p {
+    margin-bottom: 10px;
+}
+
+#twzipcode select {
+    width: 34%;
+}
+
+.login .btn,
+.logview .btn {
+    border-radius: 0;
+    line-height: 1.5em;
+}
+
+.login .btn-fb {
+    background: #3b5997;
+}
+
+.login .btn-fb:hover {
+    background: #406fc1;
+}
+
+.logingroup {
+    border-top: 1px dashed #ffa6c2;
+    border-bottom: 5px solid #ffa6c2;
+    color: #727171;
+    font-size: 20px;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.logingroup a {
+    color: #ff6cb8;
+}
+
+.logingroup a:hover {
+    text-decoration: underline;
+}
+
+.logingroup.invoice {
+    text-align: left;
+}
+
+.logingroup.invoice p {
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.logingroup .checkbox {
+    color: #ff6cb8;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    .logo {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    #twzipcode select {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .login .code {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+}
+
+/*===================== Login View =====================*/
+.logview h1 {
+    margin-bottom: 10px;
+}
+
+.logview p {
+    color: #3e3a39;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-bottom: 50px;
+}
+
+.logview .form-control {
+    margin: 0 0 50px;
+    width: 80%;
+    display: inline-block;
+}

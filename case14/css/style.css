@@ -1,0 +1,774 @@
+body {
+    background: #212121;
+    color: #383838;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.8em;
+    font-family: "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    position: relative;
+}
+
+img {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    max-width: 100%;
+    width: auto\9;
+    /* ie8 */
+}
+
+form {
+    margin: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+a {
+    color: #ffffff;
+    background: transparent;
+    text-decoration: none;
+}
+
+a:active,
+a:hover,
+a:focus {
+    outline: 0;
+    color: #666666;
+}
+
+
+#scrollUp {
+    bottom: 75px;
+    right: 0;
+    padding: 10px 20px;
+}
+
+/*===================== Hearder =====================*/
+header {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 5%;
+    z-index: 11;
+}
+
+.cd-nav ul,
+.cd-primary-nav ul {
+    padding: 0;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.form {
+    padding: 60px;
+    display: none;
+}
+
+input[type=search] {
+    border: 0;
+    border-bottom: 1px solid #000000;
+    width: 100%;
+}
+
+.cd-nav-icons {
+    top: 0 !important;
+    width: 380px !important;
+    height: 300px !important;
+}
+
+.cd-primary-nav div {
+    margin: 30px 60px 0;
+}
+
+.cd-primary-nav div a {
+    display: inline-block;
+    padding: 0;
+    line-height: 1.5em;
+    height: auto;
+}
+
+.cd-primary-nav div h3 {
+    border-bottom: 1px solid #000000;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.cd-primary-nav div h3::after {
+    display: none;
+}
+
+.cd-primary-nav div p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.cd-primary-nav .side-smo {
+    text-align: center;
+}
+
+.cd-primary-nav .side-smo a {
+    padding: 0 10px;
+}
+
+.cd-primary-nav .side-service {
+    border: 1px solid #000000;
+    padding: 30px;
+}
+
+.cd-primary-nav .side-service p {
+    margin-bottom: 10px;
+}
+
+.cd-primary-nav .side-copyright {
+    margin: 30px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.cd-primary-nav .side-copyright a {
+    font-size: 10px;
+    letter-spacing: 2px;
+    line-height: 1em;
+}
+
+.cd-primary-nav .side-copyright p {
+    font-size: 10px;
+}
+
+@media (max-width: 991px) {
+    .form {
+        padding: 30px;
+    }
+
+    .cd-primary-nav div {
+        margin: 30px 30px 0;
+    }
+
+    .cd-nav-icons {
+        top: 80px !important;
+        width: 280px !important;
+    }
+
+    .cd-primary-nav .side-service {
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .cd-nav-icons {
+        top: 70px !important;
+        width: 230px !important;
+    }
+
+    .form {
+        padding: 20px;
+    }
+
+    .cd-primary-nav div {
+        margin: 30px 20px 0;
+    }
+
+    .cd-primary-nav .side-smo {
+        margin: 30px 10px 0;
+    }
+
+    .cd-primary-nav .side-service span {
+        display: block;
+    }
+}
+
+
+/*===================== content =====================*/
+#content {
+    background-attachment: fixed;
+    background-position: 65% center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    min-height: 940px;
+}
+
+#content:after {
+    content: "";
+    background: #ffffff;
+    width: 100%;
+    height: 2px;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    right: 5%;
+    display: block;
+}
+
+.content {
+    position: absolute;
+    top: 200px;
+    left: 5%;
+    right: 5%;
+    width: 700px;
+}
+
+h1,
+h3 {
+    font-size: 18px;
+    line-height: 1.8em;
+}
+
+
+h1 {
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+h3 {
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+h3::after {
+    content: "";
+    width: 80px;
+    height: 2px;
+    background: #7f7f7f;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.btn {
+    background: #dddddd;
+    color: #000000;
+    width: 150px;
+    border-radius: 0;
+    height: 40px;
+    font-size: 17px;
+    display: inline-block;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+
+.btn:hover {
+    background: #666666;
+    color: #ffffff;
+}
+
+@media (max-width: 991px) {
+    .content {
+        width: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    #content {
+        position: relative;
+    }
+}
+
+/*===================== About =====================*/
+.about {
+    background: url("../images/about.jpg") repeat;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.about h1 {
+    color: #7f7f7f;
+}
+
+/*===================== Category =====================*/
+#content.category {
+    position: relative;
+    background: #212121;
+}
+
+#content::after {
+    display: none;
+}
+
+.category .content {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+}
+
+.category>.content>div {
+    padding: 0;
+    overflow: hidden;
+}
+
+.category a .img {
+    position: relative;
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    opacity: 1;
+}
+
+.category a:hover .img {
+    -webkit-transform: rotate(15deg) scale(1.4);
+    transform: rotate(15deg) scale(1.4);
+    opacity: 0.3;
+}
+
+.category a .text {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    z-index: 2;
+    font-size: 24px;
+}
+
+.category a:hover .text {
+    color: #ffffff;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    color: #ffffff;
+    background: transparent;
+    border: 0;
+}
+
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+    background: transparent;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .category a .text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .category .content {
+        padding-top: 200px;
+    }
+
+    .category a .text {
+        font-size: 18px;
+    }
+}
+
+/*===================== Category_view =====================*/
+#content.category_view {
+    position: relative;
+}
+
+#content.category_view .content {
+    position: relative;
+    top: 60px;
+    left: 0;
+    right: 0;
+    width: auto;
+    padding: 0 25%;
+    padding-bottom: 50px;
+}
+
+#content.category_view .content::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #ffffff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 3;
+
+}
+
+#content.category_view h1 {
+    letter-spacing: 0;
+    font-size: 22px;
+}
+
+#content.category_view h3 {
+    letter-spacing: 2px;
+}
+
+
+#content.category_view h3::after {
+    height: 5px;
+}
+
+#content.category_view h3.text-center {
+    padding-bottom: 20px;
+}
+
+#content.category_view h3.text-center::after {
+    left: 46%;
+    height: 5px;
+}
+
+.share p {
+    display: inline-block;
+    width: 250px;
+    line-height: 30px;
+    margin: auto;
+    margin-bottom: 30px;
+    background: #feffff;
+    color: #999a95;
+    vertical-align: middle;
+}
+
+.share p a:hover {
+    text-decoration: none;
+}
+
+.social-icon {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.social-icon img {
+    width: 30px;
+}
+
+.work h3 {
+    color: #ffffff;
+    font-size: 24px;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    padding: 0 25%;
+    position: relative;
+}
+
+.work {
+    position: relative;
+    top: 30px;
+}
+
+.work h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5px;
+    bottom: -20px;
+}
+
+.work .btn-work {
+    background: #ffffff;
+    padding: 20px 0;
+}
+
+.work .btn {
+    border: 1px solid #000000;
+    color: #000000;
+    background: transparent;
+    font-size: 20px;
+    width: 200px;
+    height: auto;
+    padding: 15px;
+}
+
+.work .btn:hover {
+    border: 1px solid #000000;
+    color: #ffffff;
+    background: #000000;
+}
+
+@media (max-width: 991px) {
+    #content.category_view .content {
+        padding: 5%;
+        padding-top: 120px;
+    }
+
+    .work {
+        top: 100px;
+    }
+
+    .work .content {
+        padding: 0 5%;
+    }
+
+    .work h3 {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .work .btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/*===================== Booking =====================*/
+#content.booking {
+    background-position: left center;
+}
+
+.booking {
+    background: url("../images/booking.jpg") repeat;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.booking h3::after {
+    background: #ffffff;
+}
+
+.booking .content {
+    position: absolute;
+    top: 200px;
+    left: 5%;
+    right: auto;
+    width: 50%;
+    z-index: 2;
+}
+
+.booking .from {
+    position: absolute;
+    top: 100px;
+    left: auto;
+    right: 5%;
+    width: 50%;
+    z-index: 2;
+    height: 750px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 15px;
+}
+
+.booking .from::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+}
+
+.booking .from::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(144, 128, 102, .5);
+}
+
+.booking .from h3 {
+    padding-bottom: 20px;
+}
+
+.booking .radio label {
+    margin-bottom: 30px;
+}
+
+.booking .checkbox label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    margin: 8px 0 0;
+}
+
+.booking .price label {
+    display: block;
+    width: 100%;
+}
+
+.booking .price span {
+    display: inline-block;
+    width: 25%;
+    vertical-align: middle;
+    margin: auto;
+    line-height: 20px;
+}
+
+.booking .price span:nth-child(3) {
+    width: 35%;
+}
+
+.booking .price span:nth-child(4) {
+    width: 15%;
+}
+
+.booking .price span:nth-child(5) {
+    width: 20%;
+}
+
+.booking .fare label {
+    display: inline-block;
+    width: 30%;
+}
+
+.booking .fare span {
+    display: block;
+}
+
+#google-form {
+    width: 100%;
+    height: 700px;
+}
+
+@media (max-width: 1280px) {
+    .booking .price span {
+        width: 45%;
+    }
+
+    .booking .price span:nth-child(3) {
+        width: 45%;
+    }
+
+    .booking .price span:nth-child(4) {
+        width: 45%;
+    }
+
+    .booking .price span:nth-child(5) {
+        width: 45%;
+    }
+
+    .booking .fare label {
+        display: inline-block;
+        width: 45%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .booking .content {
+        width: 45%;
+    }
+
+    .booking .from {
+        width: 45%;
+    }
+
+    .booking form .text-right {
+        width: 100%;
+        text-align: left;
+    }
+
+    .booking .from .col-xs-6 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .booking .content {
+        width: 90%;
+        left: 5%;
+        right: 5%;
+    }
+
+    .booking .from {
+        width: 90%;
+        top: 42%;
+        left: 5%;
+        right: 5%;
+        height: 500px;
+        padding-left: 0;
+    }
+
+    .booking .from .col-xs-6 {
+        width: 50%;
+    }
+
+    #google-form {
+        width: 100%;
+        height: 450px;
+    }
+}
+
+@media (max-width: 600px) {
+    .booking .from .col-xs-6 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .booking .from {
+        top: 50%;
+        height: 450px;
+    }
+}
+
+/*===================== Contact =====================*/
+#content.contact {
+    min-height: 1200px;
+}
+
+#content.contact:after {
+    bottom: 20%;
+}
+
+.contact {
+    background: url("../images/contact.jpg") repeat;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.contact h3:after {
+    background: #ffffff;
+}
+
+.form-control {
+    background: transparent;
+    box-shadow: none;
+    border: 0;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 0;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+}
+
+.form-control:focus {
+    border-color: #ffffff;
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ffffff;
+    opacity: 1;
+    /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #ffffff;
+}
+
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #ffffff;
+}
+
+.code {
+    font-size: 28px;
+    border-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .contact form .text-right {
+        text-align: left;
+    }
+}

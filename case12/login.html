@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bubble Pink</title>
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <link href="images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" type="image/png" />
+    <link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+    <link href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Baumans" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <!--<link href="css/index.css" rel="stylesheet">-->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/jquery.scrollup.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <script src="js/header.js"></script>
+    <section id="content">
+        <div class="container">
+            <div class="content login">
+                <div class="text-right close_btn"><a href="index.html"><img src="images/login-close.png" alt=""></a></div>
+                <h1 class="line"><img src="images/login.png" alt="">會員登入</h1>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="email" class="col-sm-3 control-label">電子信箱 <span>*</span></label>
+                        <div class="col-sm-9">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="service@mor-e.com.tw">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="col-sm-3 control-label">設定密碼 <span>*</span></label>
+                        <div class="col-sm-9">
+                            <input type="password" name="password" id="password" class="form-control" placeholder="********">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="col-sm-3 col-xs-12 control-label">驗證碼 <span>*</span></label>
+                        <div class="col-sm-5 col-xs-8 code">
+                            <input type="text" name="code" id="code" class="form-control">
+                        </div>
+                        <div class="col-sm-4 col-xs-4 code">
+                            <img src="images/code.jpg">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-center">
+                            <button type="submit" class="btn">登 入</button>
+                            <p>或</p>
+                            <button type="button" class="btn btn-fb" data-toggle="modal" data-target="#myModal">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                使用Facebook帳號登入
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span ria-hidden="true">&times;</span></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <img src="images/login_fb.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logingroup">
+                    <p><a href="forget.html">忘記密碼</a></p>
+                    <p>還不是會員? <a href="login02.html">加入會員</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/footer.js"></script>
+    <a id="contact" href="contact.html"><img src="images/contact.png"></a>
+</body>
+
+</html>

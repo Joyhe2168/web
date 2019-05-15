@@ -1,0 +1,21 @@
+#content .banner {
+    padding: 0;
+    border-bottom: 0;
+    margin-bottom: 30px;
+}
+
+.swiper-pagination {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.swiper-pagination-bullet-active {
+    background: #ff6cb9;
+}
+
+@media (max-width: 767px) {
+    .swiper-container {
+        width: 140%;
+        margin: 0 -20%;
+    }
+}

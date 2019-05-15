@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bubble Pink</title>
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <link href="images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" type="image/png" />
+    <link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+    <link href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Baumans" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--<link href="css/index.css" rel="stylesheet">-->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.scrollup.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $(function () {
+            $(".nav>li:eq(3)>a").addClass("active");
+        });
+    </script>
+</head>
+
+<body>
+    <script src="js/header.js"></script>
+    <section id="content">
+        <div class="breadcrumb">
+            <a href="index.html">首頁</a>
+            <a>幸福藝廊</a>
+        </div>
+        <div class="container">
+            <div class="content love">
+                <h1>幸福藝廊<span>Pink Artist</span></h1>
+                <div class="modal-wrap">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
+                        關於藝廊
+                    </button>
+                    <button type="button" class="btn btn3" data-toggle="modal" data-target="#myModal2">
+                        我要投稿
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            ria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3 class="line"><img src="images/login.png" alt=""><br>關於藝廊</h3>
+                                    <p class="text-center">您的創意圖文想要被更多人看見嗎?<br> Bubble Pink 都聽見了!<br>我們提供幸福藝廊的平台，讓您的作品發光發熱。</p>
+                                    <p>只要您的作品具備<span>粉紅色</span>的相關元素，<br>就有機會刊登在本網站。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                        style='display:none'>
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            ria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3 class="line"><img src="images/login.png" alt=""><br>我要投稿</h3>
+                                    <p class="text-center">想上傳您的有關粉紅主題相關的創意圖稿嗎?<br>將您的創意上傳到幸福藝廊，讓您的創意被更多人看見。</p>
+                                    <hr>
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <label for="name" class="col-sm-3 control-label">設計師姓名 <span>*</span></label>
+                                            <div class="col-sm-9">
+                                                <input type="text" name="name" id="name" class="form-control"
+                                                    placeholder="小綿羊">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="desc" class="col-sm-3 control-label">說明文</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" name="desc" id="desc" class="form-control"
+                                                    placeholder="填入您的問題">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="images" class="col-sm-3 control-label">圖片連結 <span>*</span></label>
+                                            <div class="col-sm-9">
+                                                <input type="text" name="images" id="images" class="form-control"
+                                                    placeholder="https://www.facebook.com/taiwan.fresh.fish/">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email" class="col-sm-3 control-label">聯絡信箱 <span>*</span></label>
+                                            <div class="col-sm-9">
+                                                <input type="text" name="email" id="email" class="form-control"
+                                                    placeholder="service@mor-e.com.tw">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="file" class="col-sm-3 control-label">上傳照片</label>
+                                            <div class="col-sm-5">
+                                                <input type="file" id="file" id="file">
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <p class="help-block">圖片大小須為3M以下</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="button" class="btn" data-toggle="modal" data-target="#myModal3">
+                                                送 出
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                        style='display:none'>
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            ria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3 class="line"><img src="images/login.png" alt=""><br>投稿成功</h3>
+                                    <p class="text-center">您的創意圖文已成功上傳至Bubble Pink，<br>
+                                        我們將有專人為您審核。在您的作品公布於幸福藝廊時，<br>
+                                        系統將寄發通知信件給您。</p>
+                                    <a href="love.html" class="btn">回幸福藝廊</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="designer news row masonry">
+                    <div class="col-sm-4 col-xs-6 item">
+                        <figure>
+                            <img src="images/love-01.jpg" alt="" />
+                            <figcaption>
+                                <h4>@小鹿RR<br>-<br>花花世界</h4>
+                                <h5><i class="fa fa-link" aria-hidden="true"></i></h5>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4 col-xs-6 item">
+                        <figure>
+                            <img src="images/love-02.jpg" alt="" />
+                            <figcaption>
+                                <h4>@小鹿RR<br>-<br>花花世界</h4>
+                                <h5><i class="fa fa-link" aria-hidden="true"></i></h5>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4 col-xs-6 item">
+                        <figure>
+                            <img src="images/love-03.jpg" alt="" />
+                            <figcaption>
+                                <h4>@小鹿RR<br>-<br>花花世界</h4>
+                                <h5><i class="fa fa-link" aria-hidden="true"></i></h5>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4 col-xs-6 item">
+                        <figure>
+                            <img src="images/love-04.jpg" alt="" />
+                            <figcaption>
+                                <h4>@小鹿RR<br>-<br>花花世界</h4>
+                                <h5><i class="fa fa-link" aria-hidden="true"></i></h5>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4 col-xs-6 item">
+                        <figure>
+                            <img src="images/love-05.jpg" alt="" />
+                            <figcaption>
+                                <h4>@小鹿RR<br>-<br>花花世界</h4>
+                                <h5><i class="fa fa-link" aria-hidden="true"></i></h5>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4 col-xs-6 item">
+                        <figure>
+                            <img src="images/love-06.jpg" alt="" />
+                            <figcaption>
+                                <h4>@小鹿RR<br>-<br>花花世界</h4>
+                                <h5><i class="fa fa-link" aria-hidden="true"></i></h5>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4 col-xs-6 item">
+                        <figure>
+                            <img src="images/love-07.jpg" alt="" />
+                            <figcaption>
+                                <h4>@小鹿RR<br>-<br>花花世界</h4>
+                                <h5><i class="fa fa-link" aria-hidden="true"></i></h5>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4 col-xs-6 item">
+                        <figure>
+                            <img src="images/love-08.jpg" alt="" />
+                            <figcaption>
+                                <h4>@小鹿RR<br>-<br>花花世界</h4>
+                                <h5><i class="fa fa-link" aria-hidden="true"></i></h5>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4 col-xs-6 item">
+                        <figure>
+                            <img src="images/love-09.jpg" alt="" />
+                            <figcaption>
+                                <h4>@小鹿RR<br>-<br>花花世界</h4>
+                                <h5><i class="fa fa-link" aria-hidden="true"></i></h5>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4 col-xs-6 item">
+                        <figure>
+                            <img src="images/love-10.jpg" alt="" />
+                            <figcaption>
+                                <h4>@小鹿RR<br>-<br>花花世界</h4>
+                                <h5><i class="fa fa-link" aria-hidden="true"></i></h5>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4 col-xs-6 item">
+                        <figure>
+                            <img src="images/love-11.jpg" alt="" />
+                            <figcaption>
+                                <h4>@小鹿RR<br>-<br>花花世界</h4>
+                                <h5><i class="fa fa-link" aria-hidden="true"></i></h5>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4 col-xs-6 item">
+                        <figure>
+                            <img src="images/love-12.jpg" alt="" />
+                            <figcaption>
+                                <h4>@小鹿RR<br>-<br>花花世界</h4>
+                                <h5><i class="fa fa-link" aria-hidden="true"></i></h5>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4 col-xs-6 item">
+                        <figure>
+                            <img src="images/love-13.jpg" alt="" />
+                            <figcaption>
+                                <h4>@小鹿RR<br>-<br>花花世界</h4>
+                                <h5><i class="fa fa-link" aria-hidden="true"></i></h5>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4 col-xs-6 item">
+                        <figure>
+                            <img src="images/love-14.jpg" alt="" />
+                            <figcaption>
+                                <h4>@小鹿RR<br>-<br>花花世界</h4>
+                                <h5><i class="fa fa-link" aria-hidden="true"></i></h5>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                    </div>
+
+                </div>
+                <div class="text-center" aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/footer.js"></script>
+    <a id="contact" href="contact.html"><img src="images/contact.png"></a>
+    <script>
+        $(function () {
+            $('.masonry').masonry({
+                itemSelector: '.item',
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bubble Pink</title>
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <link href="images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" type="image/png" />
+    <link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+    <link href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Baumans" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--<link href="css/index.css" rel="stylesheet">-->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/jquery.scrollup.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $(function () {
+            $(".sidebar>.nav>li:eq(0)>a, .nav>li:eq(1)>a").addClass("active");
+        });
+    </script>
+</head>
+
+<body>
+    <script src="js/header.js"></script>
+    <section id="content">
+        <div class="breadcrumb">
+            <a href="index.html">首頁</a>
+            <a>個人商城</a>
+        </div>
+        <div class="container designer-view">
+            <h1>個人商城<span>Shopping Mall</span></h1>
+            <div class="desview clearfix">
+                <h2><i class="fa fa-check-circle" aria-hidden="true"></i> Alione 原創手織</h2>
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-sm-6 mailimg">
+                                <img src="images/mall.jpg" alt="">
+                            </div>
+                            <div class="col-sm-6 maildesc row">
+                                <div class="col-xs-5"><i class="fa fa-circle" aria-hidden="true"></i> Designer</div>
+                                <div class="col-xs-7">小鹿RR</div>
+                                <div class="col-xs-5"><i class="fa fa-circle" aria-hidden="true"></i> Opening</div>
+                                <div class="col-xs-7">2016/02/17</div>
+                                <div class="col-xs-5"><i class="fa fa-circle" aria-hidden="true"></i> Followers</div>
+                                <div class="col-xs-7">4,233</div>
+                                <div class="col-xs-5"><i class="fa fa-circle" aria-hidden="true"></i> Like</div>
+                                <div class="col-xs-7">
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    <span>(16)</span>
+                                </div>
+                                <div class="col-xs-5"><i class="fa fa-circle" aria-hidden="true"></i> Sold</div>
+                                <div class="col-xs-7">1,207 件</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="modal-wrap">
+                            <button type="button" class="btn"><img src="images/proplus.png" alt=""> 關注商城</button>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn2" data-toggle="modal" data-target="#myModal2">
+                                <img src="images/message.png" alt=""> 我要私訊
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                style='display:none'>
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                                    ria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3 class="line"><img src="images/login.png" alt=""><br>我要詢問</h3>
+                                            <p class="text-center">在Bubble Pink的商品中有任何疑問，<br>都可以私訊詢問賣家商品細節。</p>
+                                            <hr>
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label for="title" class="col-sm-3 control-label">標題</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" name="title" id="title" class="form-control"
+                                                            placeholder="法國絨毛泡泡先生抱枕/L/M/S 全系列微笑款">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="note" class="col-sm-3 control-label">聊聊內容</label>
+                                                    <div class="col-sm-9">
+                                                        <textarea name="note" id="note" class="form-control" rows="5"
+                                                            placeholder="填入您的問題"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="file" class="col-sm-3 control-label">上傳照片</label>
+                                                    <div class="col-sm-5">
+                                                        <input type="file" id="file" id="file">
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <p class="help-block">圖片大小須為3M以下</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="button" class="btn" data-toggle="modal" data-target="#myModal3">
+                                                        送 出
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                style='display:none'>
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                                    ria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3 class="line"><img src="images/login.png" alt=""><br>已傳送</h3>
+                                            <a href="designer_view.html" class="btn">完 成</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <h2><i class="fa fa-check-circle" aria-hidden="true"></i> 我們的小故事</h2>
+                        <p>熱愛手作的媽媽與兩個學設計。 精選布料與舒適的配色在細心的製作下完成。<br/>
+                                夢想是能讓每個購買過商品的客人都能感受手作的溫度。熱愛手作的媽媽與兩個學設計。</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="sidebar col-sm-3">
+                <div class="side-title"><img src="images/idea.png" alt=""> 商城分類</div>
+                <ul class="nav">
+                    <li><a href="#">全部 (3201)</a></li>
+                    <li><a href="#">手作織物 (20)</a></li>
+                    <li><a href="#">二手出清 (3)</a></li>
+                    <li><a href="#">泡泡系列 (15)</a></li>
+                    <li><a href="#">文創小品 (9)</a></li>
+                    <li><a href="#">其他 (6)</a></li>
+                </ul>
+            </div>
+            <div class="content col-sm-9">
+                <div class="designer row">
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <figure>
+                            <img src="images/designer-01.jpg" alt="" />
+                            <figcaption>
+                                <h5>VIEW</h5>
+                            </figcaption>
+                            <a href="product_view01.html"></a>
+                        </figure>
+                        <div class="text clearfix">
+                            <h4><a href="product_view01.html">正版授權 Barbapapa 泡泡...</a></h4>
+                            <p>泡泡福</p>
+                            <p class="pull-left">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <span>(16)</span>
+                            </p>
+                            <p class="pull-right price">NT$ 350.00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <figure>
+                            <img src="images/designer-02.jpg" alt="" />
+                            <figcaption>
+                                <h5>VIEW</h5>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                        <div class="text clearfix">
+                            <h4><a href="#">簡約條紋男女亞麻泡泡聯名款氣墊粉餅</a></h4>
+                            <p>KickThe_ROCK</p>
+                            <p class="pull-left">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <span>(92)</span>
+                            </p>
+                            <p class="pull-right price">NT$ 350.00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <figure>
+                            <img src="images/designer-03.jpg" alt="" />
+                            <figcaption>
+                                <h5>VIEW</h5>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                        <div class="text clearfix">
+                            <h4><a href="#">Stitch台灣製Disney迪士尼</a></h4>
+                            <p>Alione 原創手織</p>
+                            <p class="pull-left">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <span>(102)</span>
+                            </p>
+                            <p class="pull-right price">NT$ 350.00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <figure>
+                            <img src="images/designer-04.jpg" alt="" />
+                            <figcaption>
+                                <h5>VIEW</h5>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                        <div class="text clearfix">
+                            <h4><a href="#">正版授權 Barbapapa 泡泡...</a></h4>
+                            <p>LILI小舖</p>
+                            <p class="pull-left">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <span>(16)</span>
+                            </p>
+                            <p class="pull-right price">NT$ 350.00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <figure>
+                            <img src="images/designer-02.jpg" alt="" />
+                            <figcaption>
+                                <h5>VIEW</h5>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                        <div class="text clearfix">
+                            <h4><a href="#">簡約條紋男女亞麻泡泡聯名款氣墊粉餅</a></h4>
+                            <p>KickThe_ROCK</p>
+                            <p class="pull-left">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <span>(92)</span>
+                            </p>
+                            <p class="pull-right price">NT$ 350.00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <figure>
+                            <img src="images/designer-03.jpg" alt="" />
+                            <figcaption>
+                                <h5>VIEW</h5>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                        <div class="text clearfix">
+                            <h4><a href="#">Stitch台灣製Disney迪士尼</a></h4>
+                            <p>韓系時尚 all in one</p>
+                            <p class="pull-left">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <span>(102)</span>
+                            </p>
+                            <p class="pull-right price">NT$ 350.00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <figure>
+                            <img src="images/designer-04.jpg" alt="" />
+                            <figcaption>
+                                <h5>VIEW</h5>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                        <div class="text clearfix">
+                            <h4><a href="#">正版授權 Barbapapa 泡泡...</a></h4>
+                            <p>LILI小舖</p>
+                            <p class="pull-left">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <span>(16)</span>
+                            </p>
+                            <p class="pull-right price">NT$ 350.00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <figure>
+                            <img src="images/designer-02.jpg" alt="" />
+                            <figcaption>
+                                <h5>VIEW</h5>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                        <div class="text clearfix">
+                            <h4><a href="#">簡約條紋男女亞麻泡泡聯名款氣墊粉餅</a></h4>
+                            <p>泡泡福</p>
+                            <p class="pull-left">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <span>(92)</span>
+                            </p>
+                            <p class="pull-right price">NT$ 350.00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <figure>
+                            <img src="images/designer-03.jpg" alt="" />
+                            <figcaption>
+                                <h5>VIEW</h5>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                        <div class="text clearfix">
+                            <h4><a href="#">Stitch台灣製Disney迪士尼</a></h4>
+                            <p>韓系時尚 all in one</p>
+                            <p class="pull-left">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <span>(102)</span>
+                            </p>
+                            <p class="pull-right price">NT$ 350.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center" aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/footer.js"></script>
+    <a id="contact" href="contact.html"><img src="images/contact.png"></a>
+</body>
+
+</html>

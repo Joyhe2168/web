@@ -1,0 +1,1425 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    color: #595757;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.8em;
+    font-family: "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    padding-top: 100px;
+    position: relative;
+}
+
+img {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    max-width: 100%;
+    width: auto\9;
+    /* ie8 */
+}
+
+form {
+    margin: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+a {
+    color: #595757;
+    text-decoration: none;
+}
+
+a:active,
+a:hover,
+a:focus {
+    color: #865e5c;
+    outline: 0;
+    text-decoration: none;
+}
+
+#scrollUp {
+    border-radius: 50%;
+    background: #d2ada1;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    line-height: 55px;
+    text-align: center;
+}
+
+.container {
+    width: 1280px;
+}
+
+@media (max-width: 1280px) {
+    .container {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 65px;
+    }
+}
+
+
+
+
+/* header ======================================================*/
+
+header {
+    background-color: #d2aca1;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border: 0;
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    float: none;
+    height: auto;
+    display: block;
+}
+
+.navbar-collapse {
+    padding: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-family: "Libre Baskerville", serif;
+    color: #ffffff;
+    padding: 30px;
+    font-weight: itin;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a.active {
+    background: url("../images/hover.png") bottom no-repeat;
+    color: #ffffff;
+}
+
+@media screen and (min-width:768px) {
+    .navbar-brand-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .navbar-right {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .navbar-default .navbar-nav>li>a {
+        padding: 30px 20px;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .navbar-default .navbar-nav>li>a {
+        padding: 30px 15px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .navbar-default .navbar-nav>li>a {
+        padding: 30px 10px;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .navbar-default .navbar-nav>li>a {
+        font-size: 15px;
+        padding: 30px 5px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    header {
+        height: 65px;
+        padding: 10px 0 0;
+    }
+
+    header>.container {
+        padding: 0;
+    }
+
+    .navbar-brand {
+        padding: 0 15px 10px;
+        height: 50px;
+    }
+
+    .navbar-brand>img {
+        width: 60px;
+    }
+
+    .navbar-default .navbar-toggle {
+        float: none;
+        position: absolute;
+        right: 15px;
+        margin-top: 5px;
+        margin-right: 0;
+        border-color: #865e5c;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background: #865e5c;
+    }
+
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+        background: transparent;
+    }
+
+    .navbar-default .navbar-collapse {
+        background: #d2aca1;
+        width: 100%;
+        border: 0;
+    }
+
+    .navbar-default .navbar-nav {
+        margin: 0;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+        transition: color .3s ease;
+    }
+
+    .navbar-default .navbar-nav>li>a:hover,
+    .navbar-default .navbar-nav>li>a:focus,
+    .navbar-default .navbar-nav>li>a.active {
+        background: transparent;
+        color: #865e5c;
+    }
+}
+
+
+
+
+
+/* footer ======================================================*/
+footer {
+    background-color: #d2ada1;
+    padding: 30px 0;
+    color: #3c3736;
+}
+
+footer a {
+    color: #3c3736;
+}
+
+footer a:hover {
+    color: #3c3736;
+    text-decoration: underline;
+}
+
+.footsmo,
+.footinfo,
+.copyright {
+    text-align: center;
+}
+
+.footsmo {
+    padding: 10px 0;
+}
+
+.footsmo a {
+    display: inline-block;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    font-size: 20px;
+    color: #d2ada1;
+    text-align: center;
+    vertical-align: middle;
+    transition: color .3s ease;
+}
+
+.footsmo a:hover {
+    color: #865e5c;
+}
+
+.footinfo {
+    padding: 20px 0 10px;
+}
+
+.footinfo ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footinfo li {
+    display: inline-block;
+    padding: 0 20px 10px;
+}
+
+.copyright {
+    font-size: 13px;
+}
+
+
+
+
+
+
+/* banner ======================================================*/
+#banner>.container {
+    width: auto;
+    padding: 0;
+}
+
+@media screen and (max-width:767px) {
+    #banner>.container {
+        width: 150%;
+        margin: 0 -25%;
+    }
+}
+
+
+
+
+
+/* main ========================================================*/
+h1,
+h2 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 35px;
+    color: #865e5c;
+    background: url('../images/line.png') center bottom no-repeat;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+@media screen and (max-width:767px) {
+
+    h1,
+    h2 {
+        font-size: 30px;
+    }
+}
+
+.swiper-container .swiper-button-prev {
+    background-image: url('../images/prev.png');
+    width: 30px;
+    height: 30px;
+    left: 0;
+}
+
+.swiper-container .swiper-button-next {
+    background-image: url('../images/next.png');
+    width: 30px;
+    height: 30px;
+    right: 0;
+}
+
+.content {
+    padding: 100px 0 80px;
+}
+
+.breadcrumb {
+    text-align: center;
+    color: #7c7c7c;
+    margin-bottom: 50px;
+    background: transparent;
+}
+
+.breadcrumb>li+li:before {
+    content: ">";
+    color: #865e5c;
+}
+
+.breadcrumb a {
+    color: #865e5c;
+}
+
+.pagnav {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.pagination>li>a {
+    background: transparent;
+    border: 0;
+    color: #000000;
+    margin: 0 5px;
+    transition: all .3 ease;
+}
+
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover {
+    background: transparent;
+    color: #9f7a8b;
+    border-bottom: 1px solid #9f7a8b;
+}
+
+.pagination>li.arrow>a {
+    background: transparent;
+    border: 1px solid #d2b6a3;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: #d2b6a3;
+    text-align: center;
+}
+
+.pagination>li.arrow>a:hover {
+    background: #d2b6a3;
+    color: #ffffff;
+}
+
+.content .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color: #865e5c;
+    border: 1px solid #865e5c;
+    border-radius: 0;
+    width: 200px;
+    margin-top: 50px;
+    transition: all .3s ease;
+}
+
+.content .btn:hover {
+    background-color: #865e5c;
+    color: #ffffff;
+}
+
+
+
+
+
+/* about =======================================================*/
+.page-about footer {
+    background: #ffffff;
+    border-bottom: 35px solid #d2ada1;
+    padding-bottom: 60px;
+}
+
+.page-about .footsmo a {
+    background-color: #d2ada1;
+    color: #ffffff;
+}
+
+.page-about .footsmo a:hover {
+    color: #865e5c;
+}
+
+.about .item {
+    padding-top: 60px;
+}
+
+.about .txt h3 {
+    font-family: "Libre Baskerville", serif;
+    color: #865e5c;
+    margin-bottom: 30px;
+}
+
+.about .txt p {
+    line-height: 2.5em;
+}
+
+
+
+/*wedding*/
+.wedding .pic {
+    position: relative;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.wedding .pic::before {
+    content: "";
+    width: 500px;
+    height: 500px;
+    background: #ede5df;
+    position: absolute;
+    right: 60px;
+    top: 0;
+}
+
+.wedding .pic img {
+    position: relative;
+    z-index: 2;
+}
+
+.wedding .txt {
+    position: relative;
+}
+
+.wedding .txt::before {
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: #865e5c;
+    display: block;
+    position: absolute;
+    left: -70px;
+    top: 150px;
+}
+
+.wedding .txt h3 {
+    font-size: 40px;
+    display: inline-block;
+    background: #ffffff;
+    margin-top: 130px;
+    margin-left: 60px;
+}
+
+.wedding .txt p {
+    float: right;
+    width: 75%;
+}
+
+
+
+
+/*since*/
+.since .pic {
+    text-align: right;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+/*core*/
+.core-wrap {
+    background: #eee6e0;
+    padding: 100px 0;
+    position: relative;
+    top: -60px;
+}
+
+.core h2 {
+    font-size: 27px;
+    background: transparent;
+    color: #838073;
+}
+
+.core .item-group {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.core .pic {
+    padding: 50px 0;
+}
+
+@media screen and (max-width:1280px) {
+
+    /*wedding*/
+    .wedding .pic::before {
+        right: 30px;
+    }
+
+    .wedding .txt p {
+        float: none;
+        width: 90%;
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width:1080px) {
+
+    /*wedding*/
+    .wedding .pic::before {
+        right: 0;
+    }
+
+    .wedding .txt h3 {
+        margin-left: 30px;
+    }
+
+    .wedding .txt p {
+        float: none;
+        width: auto;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width:991px) {
+
+    .about .item {
+        padding-top: 30px;
+    }
+
+
+
+    /*wedding*/
+    .wedding .pic {
+        padding-top: 50px;
+    }
+
+    .wedding .pic::before {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    }
+
+    .wedding .txt::before {
+        top: 33px;
+    }
+
+    .wedding .txt h3 {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+
+    .wedding .txt p {
+        margin-left: 0;
+    }
+
+    /*since*/
+    .since .pic {
+        text-align: center;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    /*wedding*/
+    .wedding .pic::before {
+        width: 300px;
+        height: 300px;
+        left: 150px;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    /*wedding*/
+    .wedding .pic::before {
+        width: 200px;
+        height: 200px;
+        left: 100px;
+    }
+}
+
+
+
+
+
+/* class =======================================================*/
+.class-wrap {
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.class-wrap::before {
+    content: "";
+    height: 400px;
+    background: #d6c0b8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.class-wrap>.container {
+    width: 1600px;
+}
+
+.class {
+    position: relative;
+    z-index: 3;
+    padding-top: 60px;
+}
+
+.class h2 {
+    color: #ffffff;
+    background: transparent;
+    text-align: left;
+}
+
+.class .item {
+    margin-bottom: 30px;
+}
+
+.class figure * {
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.class figure {
+    position: relative;
+    overflow: hidden;
+}
+
+.class figure img {
+    width: 100%;
+}
+
+.class figure a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.class figure figcaption {
+    position: absolute;
+    height: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    padding: 15px;
+    background-color: #86595c;
+    opacity: 0;
+}
+
+.class figure figcaption h3 {
+    font-size: 20px;
+    line-height: 1.6em;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.class figure figcaption p {
+    font-family: "Libre Baskerville", serif;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.class figure:hover figcaption {
+    height: calc(25%);
+    opacity: 1;
+}
+
+
+@media screen and (max-width:1600px) {
+    .class-wrap>.container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1366px) {
+    .class figure:hover figcaption {
+        height: calc(40%);
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .class figure figcaption h3 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .class figure:hover figcaption {
+        height: calc(25%);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .class .item-group {
+        text-align: center;
+    }
+
+    .class .item {
+        float: none;
+        width: auto;
+        padding: 0 10%;
+    }
+
+    .class figure figcaption p {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .class figure:hover figcaption {
+        height: calc(40%);
+    }
+}
+
+
+
+
+
+/* news ========================================================*/
+.news-wrap>.container {
+    width: 1440px;
+}
+
+.news .item-group {
+    padding: 80px 0;
+}
+
+.news .wedding .pic {
+    padding-top: 50px;
+}
+
+.news .wedding .pic::before {
+    display: none;
+}
+
+.news .wedding .txt {
+    padding-top: 80px;
+}
+
+.news .wedding .txt::before {
+    width: auto;
+    left: 0;
+    right: 50px;
+    top: 130px;
+}
+
+.news .wedding .txt h3 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 30px;
+    line-height: 1.5em;
+    color: #865e5c;
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 50px;
+    padding: 0 50px;
+}
+
+.news .wedding .txt h3 span {
+    display: block;
+}
+
+.news .wedding .txt p {
+    float: none;
+    width: auto;
+    line-height: 2em;
+    padding: 0 50px;
+}
+
+@media screen and (max-width:1440px) {
+    .news-wrap>.container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .news .wedding .pic {
+        padding-top: 150px;
+    }
+
+    .news .wedding .txt::before {
+        right: 0;
+    }
+
+    .news .wedding .txt h3 {
+        padding: 0;
+    }
+
+    .news .wedding .txt h3 span {
+        display: inline-block;
+    }
+
+    .news .wedding .txt p {
+        margin-left: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .news .wedding .txt {
+        padding-top: 50px;
+    }
+
+    .news .wedding .txt::before {
+        top: 100px;
+    }
+
+    .news .wedding .txt h3 {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .news .wedding .pic {
+        padding-top: 50px;
+    }
+
+    .news .btn-wrap {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .news .item-group {
+        padding: 0;
+    }
+}
+
+
+
+
+
+/*news view ====================================================*/
+.view-wrap {
+    width: 900px;
+    margin: auto;
+}
+
+.view h2 {
+    text-align: left;
+    font-family: "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    background: transparent;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+}
+
+.view .date {
+    font-size: 20px;
+}
+
+.view p {
+    margin-bottom: 20px;
+}
+
+.share {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.share img {
+    padding-top: 5px;
+}
+
+@media screen and (max-width:991px) {
+    .view p {
+        margin: 30px 0;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    .view-wrap {
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* product =====================================================*/
+.swiper-product {
+    padding-bottom: 30px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.swiper-product .swiper-pagination {
+    width: 500px;
+    position: absolute;
+    left: 240px;
+    bottom: 0;
+}
+
+.swiper-product .swiper-pagination-bullet {
+    width: 30px;
+    height: 5px;
+    border-radius: 0;
+    background: #865e5c;
+}
+
+.swiper-product .swiper-pagination-bullet-active {
+    background: #865e5c;
+}
+
+.product-wrap .class figure figcaption {
+    background: url('../images/product.png') right bottom #d6bbb8 no-repeat;
+}
+
+.product-wrap .class figure figcaption h3 {
+    text-align: left;
+    font-weight: bold;
+    color: #865e5c;
+}
+
+.product-wrap .class figure:hover figcaption {
+    height: calc(20%);
+}
+
+@media screen and (max-width:1080px) {
+    .product-wrap .class figure figcaption h3 {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .swiper-product {
+        width: 120%;
+        margin: 0 -10%;
+    }
+
+    .swiper-product .swiper-pagination {
+        width: auto;
+        margin: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+}
+
+
+
+
+
+/* product view ================================================*/
+.page-product footer {
+    background: #ffffff;
+    padding-bottom: 30px;
+}
+
+.page-product .footsmo a {
+    background-color: #d2ada1;
+    color: #ffffff;
+}
+
+.page-product .footsmo a:hover {
+    color: #865e5c;
+}
+
+.product>.container {
+    width: 1600px;
+}
+
+.product .wedding {
+    position: relative;
+    z-index: 2;
+}
+
+.product .wedding .pic {
+    padding-top: 20px;
+}
+
+.product .wedding .pic::before {
+    display: none;
+}
+
+.product .wedding .txt::before {
+    left: -40px;
+    background: #865e5c;
+}
+
+.product .wedding .txt h3 {
+    color: #865e5c;
+    margin-bottom: 100px;
+}
+
+.product .wedding .txt h3 span {
+    font-family: "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-size: 45px;
+    display: block;
+    padding-top: 10px;
+}
+
+.product .wedding .txt p {
+    float: none;
+    width: auto;
+    margin-left: 60px;
+    margin-bottom: 50px;
+}
+
+.product-carousel {
+    position: relative;
+    top: -100px;
+    margin-bottom: -100px;
+    padding: 150px 0 80px;
+    background: #f2e3de;
+    text-align: center;
+}
+
+.product-carousel>.container {
+    width: 1600px;
+}
+
+.product-carousel .btn-wrap {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.product-carousel .btn {
+    width: 150px;
+    margin: 0 20px 10px;
+    background-color: #f2e3de;
+}
+
+.product-carousel .btn i {
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.swiper-carousel {
+    padding: 0 50px;
+}
+
+@media screen and (max-width:1600px) {
+
+    .product>.container,
+    .product-carousel>.container {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    .product .wedding .txt::before {
+        display: none;
+    }
+
+    .product .wedding .txt h3 {
+        margin-bottom: 50px;
+        font-size: 24px;
+    }
+
+    .product .wedding .txt h3 span {
+        font-size: 30px;
+    }
+
+    .product .wedding .txt p {
+        margin-left: 0;
+    }
+
+    .product-carousel {
+        padding: 100px 0 80px;
+    }
+
+}
+
+
+
+
+
+/* support =====================================================*/
+.support-wrap {
+    background: #ede5df;
+}
+
+.swiper-news {
+    padding: 0 50px;
+    margin-top: 80px;
+}
+
+.support figure {
+    position: relative;
+}
+
+.support figure * {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease
+}
+
+.support figure a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.support figure .pic {
+    background: #865e5c;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.support figure img {
+    width: 100%;
+}
+
+.support figure i {
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.support figure:hover img {
+    opacity: 0.5;
+}
+
+.support figure:hover i {
+    opacity: 1;
+}
+
+.support figcaption h3 {
+    font-size: 17px;
+    border-left: 1px solid #2e3b43;
+    border-right: 1px solid #2e3b43;
+    display: inline-block;
+    padding: 0 10px;
+    color: #2e3b43;
+}
+
+.support figcaption p {
+    font-size: 17px;
+    color: #615f5f;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:600px) {
+    .swiper-news {
+        padding: 0;
+    }
+}
+
+
+
+
+
+/* inquiry =====================================================*/
+.inquiry {
+    background: transparent;
+    padding-bottom: 60px;
+}
+
+.inquiry .btn {
+    background: #d2b6a3;
+    color: #865e5c;
+}
+
+
+.inquiry .btn:hover {
+    background: #865e5c;
+    color: #d2b6a3;
+}
+
+.inqu-group {
+    width: 900px;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+    border-bottom: 1px solid #865e5c;
+}
+
+.inqu-tit {
+    color: #865e5c;
+}
+
+.inqu-tit .tit {
+    text-align: left;
+    padding-left: 70px;
+}
+
+.inqu-list {
+    border-top: 1px solid #865e5c;
+}
+
+.inqu-list>div {
+    margin: auto;
+    line-height: 150px;
+    vertical-align: middle;
+}
+
+.inqu-tit div,
+.inqu-list>div {
+    padding: 15px 20px;
+}
+
+@media screen and (max-width:900px) {
+    .inqu-group {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .inqu-list>div {
+        line-height: 1.5em;
+    }
+
+    .inqu-list>div>div {
+        padding: 15px 20px;
+    }
+
+    .inqu-tit {
+        display: none;
+    }
+}
+
+
+
+
+
+/* faq =========================================================*/
+.faq .panel-default {
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #c1bdba;
+}
+
+.faq .panel-default>.panel-heading+.panel-collapse>.panel-body {
+    border: 0;
+    padding-left: 100px;
+}
+
+.faq .panel-group .panel+.panel {
+    margin-top: 0;
+}
+
+.faq .panel-title a {
+    display: block;
+    position: relative;
+    transition: all .3s ease;
+    font-size: 19px;
+    color: #231815;
+    font-weight: bold;
+}
+
+.faq .panel-title a.collapsed {
+    color: #231815;
+    font-weight: normal;
+}
+
+.faq .panel-title a::after {
+    content: "";
+    border-style: solid;
+    border-color: #865c5c transparent transparent transparent;
+    border-width: 10px 10px 0 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.faq .panel-title a.collapsed::after {
+    border-color: transparent transparent transparent #d2ada1;
+    border-width: 10px 0 10px 10px;
+}
+
+.faq .panel-title a span {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: normal;
+    background: #865c5c;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 35px;
+}
+
+.faq .panel-title a.collapsed span {
+    background: #d2ada1;
+}
+
+
+
+
+
+/* contact =====================================================*/
+.contact {
+    background: url('../images/contact-bg.png') center bottom #ffffff no-repeat;
+    padding: 0 0 220px;
+}
+
+.contact form {
+    width: 650px;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.contact .form-group {
+    padding: 0 10px;
+}
+
+.contact .form-control {
+    border-radius: 0;
+    border: 1px solid #cec3c1;
+    color: #b3b3b4;
+    height: 50px;
+    line-height: 1.8em;
+    font-size: 20px;
+}
+
+.contact .form-control:focus {
+    border-color: #cec3c1;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(206, 195, 193, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(206, 195, 193, .6);
+}
+
+.contact .codepic {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.contact .btn {
+    border-radius: 0;
+    border: 1px solid #9fa0a0;
+    background: #ecedee;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    color: #33454f;
+    margin-top: 50px;
+}
+
+.contact p {
+    line-height: 1.8em;
+}
+
+@media screen and (max-width:767px) {
+    .contact form {
+        width: 100%;
+    }
+
+    .contact .codepic {
+        text-align: left;
+    }
+}

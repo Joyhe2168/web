@@ -1,0 +1,1013 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background: url('../images/bg.jpg') repeat;
+    color: #8e8e8e;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    line-height: 1.8em;
+    font-family: '微軟正黑體', 'Microsoft JhengHei', sans-serif;
+    padding-top: 90px;
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+img {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    max-width: 100%;
+    width: auto\9;
+    /* ie8 */
+}
+
+form {
+    margin: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+a {
+    color: #8e8e8e;
+    text-decoration: none;
+}
+
+a:active,
+a:hover,
+a:focus {
+    color: #00a0ea;
+    outline: 0;
+    text-decoration: none;
+}
+
+#scrollUp {
+    bottom: 15%;
+    right: 5%;
+    width: 70px;
+    height: 35px;
+}
+
+.container {
+    width: 1280px;
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        width: 100%;
+    }
+}
+
+
+
+
+/* header =============================================================================*/
+header {
+    background-color: #90c6ec;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    height: 90px;
+    text-align: center;
+}
+
+header * {
+    transition: all .3s ease-out;
+}
+
+header>.container {
+    position: relative;
+}
+
+.logo {
+    padding: 20px 0 15px;
+}
+
+.logo h1 {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.smo {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+.smo ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.smo li {
+    display: inline-block;
+}
+
+.smo a {
+    display: inline-block;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    transition: all .4s ease;
+}
+
+.smo a:hover {
+    border: 1px solid #00a0ea;
+    background-color: #00a0ea;
+}
+
+.header {
+    height: 60px;
+}
+
+.header .logo {
+    padding: 5px 0;
+}
+
+.header .logo img {
+    width: 140px;
+}
+
+.header .smo {
+    bottom: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        text-align: left;
+    }
+}
+
+
+
+
+
+/* main ===============================================================================*/
+section {
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 991px) {
+    section {
+        padding: 60px 0;
+    }
+}
+
+
+
+
+
+/* banner =============================================================================*/
+.banner>.container {
+    position: relative;
+    text-align: center;
+}
+
+.banner .dialog {
+    position: absolute;
+    top: 65%;
+    left: -5%;
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: .5s;
+}
+
+.banner .scroll {
+    position: absolute;
+    bottom: 10%;
+    right: -5%;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: .5s;
+}
+
+@media screen and (max-width: 1500px) {
+    .banner .dialog {
+        left: 15px;
+    }
+
+    .banner .dialog img {
+        width: 300px;
+    }
+
+    .banner .scroll {
+        right: 15px;
+        bottom: -10%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .banner .dialog img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .banner .dialog img {
+        width: 200px;
+    }
+
+    .banner .scroll img {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banner .dialog {
+        top: -10%;
+    }
+
+    .banner .dialog img {
+        width: 150px;
+    }
+
+    .banner .scroll {
+        bottom: -20%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner {
+        padding-bottom: 100px;
+    }
+
+    .banner .dialog {
+        top: -20%;
+    }
+
+    .banner .dialog img {
+        width: 120px;
+    }
+
+    .banner .scroll {
+        bottom: -50%;
+    }
+}
+
+
+
+
+
+/* about ==============================================================================*/
+.about {
+    position: relative;
+    text-align: center;
+    padding-bottom: 180px;
+}
+
+.about h2 {
+    color: #909090;
+    font-family: 'El Messiri', sans-serif;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.about h2::after {
+    content: '';
+    width: 220px;
+    height: 20px;
+    background: url('../images/line-red.png') no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.about .txt {
+    width: 1024px;
+    margin: 0 auto 80px;
+}
+
+.about .txt h3 {
+    color: #868686;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.8em;
+    margin: 70px 0;
+}
+
+.about .txt p {
+    line-height: 2.5em;
+}
+
+.about .try {
+    position: absolute;
+    right: 20%;
+    bottom: 13%;
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: .5s;
+}
+
+.wave {
+    position: absolute;
+    width: 150px;
+    height: 90px;
+    background: url("../images/wave.png") center center no-repeat;
+    animation: wave 10s infinite linear;
+}
+
+.wave1 {
+    top: 5%;
+    left: 0;
+}
+
+.wave2 {
+    top: 30%;
+    right: 0;
+}
+
+.wave3 {
+    top: 50%;
+    left: 10%;
+}
+
+@keyframes wave {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 50px 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .about .try {
+        right: 15%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .about {
+        padding-bottom: 100px;
+    }
+
+    .about .try {
+        right: 10%;
+        bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about .txt {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .about {
+        padding-bottom: 120px;
+    }
+
+    .about .txt h3 {
+        font-size: 20px;
+        margin: 50px 0;
+    }
+
+    .about .try {
+        right: 15px;
+        bottom: 5%;
+    }
+
+    .about .try img {
+        width: 120px;
+    }
+
+    .wave1 {
+        top: -2%;
+    }
+
+    .wave2 {
+        top: 50%;
+    }
+
+    .wave3 {
+        top: 80%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about .txt h3 {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+/* product ============================================================================*/
+.product {
+    padding-top: 180px;
+}
+
+@media screen and (max-width: 991px) {
+    .product {
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .product {
+        padding-top: 80px;
+    }
+}
+
+
+
+/*desc*/
+.item-desc {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.item-desc .pic {
+    width: 65%;
+    position: relative;
+}
+
+.item-desc .pro-pic {
+    padding-left: 15px;
+}
+
+.item-desc .pro-txt {
+    position: absolute;
+    top: 0;
+    right: -35%;
+    z-index: 2;
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: .5s;
+}
+
+.item-desc .txt {
+    width: 31%;
+    font-size: 16px;
+    line-height: 2.5em;
+    padding-left: 4%;
+}
+
+.item-desc .txt p {
+    color: #666666;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1280px) {
+    .item-desc .pic {
+        width: 55%;
+    }
+
+    .item-desc .pro-txt {
+        top: -20%;
+    }
+
+    .item-desc .pro-txt img {
+        width: 280px;
+    }
+
+    .item-desc .txt {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .item-desc .pro-txt {
+        top: -40%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .item-desc {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .item-desc .pic {
+        width: 70%;
+    }
+
+    .item-desc .pro-txt {
+        top: -30%;
+        right: -20%;
+    }
+
+    .item-desc .pro-txt img {
+        width: 250px;
+    }
+
+    .item-desc .txt {
+        width: auto;
+        padding-left: 0;
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .item-desc .pic {
+        width: 80%;
+    }
+
+    .item-desc .pro-txt {
+        top: -30%;
+        right: -10%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .item-desc .pic {
+        width: 100%;
+    }
+
+    .item-desc .pro-txt {
+        top: -45%;
+        right: 5%;
+    }
+
+    .item-desc .pro-txt img {
+        width: 200px;
+    }
+}
+
+
+
+/*figure*/
+.item-figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.item-figure figure {
+    position: relative;
+    width: 25%;
+    text-align: center;
+}
+
+.item-figure figure * {
+    transition: all 0.3s ease-out;
+}
+
+.item-figure figure img {
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.item-figure figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    text-align: center;
+}
+
+.item-figure figcaption h3 {
+    color: #707070;
+    font-size: 20px;
+}
+
+.item-figure .figure-slogan {
+    width: 15%;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    text-align: right;
+}
+
+.item-figure .hover {
+    background: url('../images/hover.png') center center no-repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.item-figure .hover h3 {
+    color: #ffffff;
+}
+
+.item-figure .hover .txt {
+    font-size: 16px;
+    position: absolute;
+    top: 32%;
+    left: 20%;
+}
+
+.item-figure .hover p {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.item-figure .hover p img {
+    box-shadow: none;
+}
+
+.item-figure .hover span {
+    display: block;
+    padding-left: 60px;
+    line-height: 1.5em;
+}
+
+.item-figure figure:last-of-type .hover .txt {
+    padding-top: 20px;
+}
+
+.item-figure figure:last-of-type .hover p {
+    text-align: center;
+}
+
+.item-figure figure:hover .hover {
+    opacity: 1;
+}
+
+.item-figure figure:hover figcaption {
+    opacity: 0;
+}
+
+@media screen and (max-width: 1280px) {
+    .item-figure {
+        flex-wrap: wrap;
+    }
+
+    .item-figure figure {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+
+    .item-figure .hover .txt {
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .item-figure .hover p {
+        text-align: center;
+    }
+
+    .item-figure .hover span {
+        padding-left: 95px;
+    }
+
+    .item-figure .figure-slogan {
+        width: auto;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .item-figure {
+        margin-bottom: 60px;
+    }
+
+    .item-figure .figure-slogan {
+        top: -30%;
+        left: auto;
+        right: 15px;
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .item-figure .figure-slogan {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .item-figure figure {
+        width: 100%;
+    }
+}
+
+
+
+/*figure*/
+.item-info {
+    background: url('../images/info-bg.png') left top no-repeat #ffffff;
+    background-size: contain;
+}
+
+.item-info .txt {
+    padding-left: 250px;
+}
+
+.item-info .txt p {
+    line-height: 2.2em;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 991px) {
+    .item-info {
+        background: url('../images/info-bg-s.png') left top no-repeat #ffffff;
+        background-size: auto;
+    }
+
+    .item-info .txt {
+        padding-left: 0;
+        padding-top: 100px;
+    }
+}
+
+
+
+
+
+/* contact ============================================================================*/
+.contact h2 {
+    text-align: center;
+}
+
+.contact form {
+    margin-top: 100px;
+}
+
+.contact .form-group {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.contact .form-group::after {
+    content: '';
+    background: url('../images/contact-line.png') right bottom repeat-x;
+    width: 85%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+}
+
+.contact .name-wrap::after,
+.contact .add-wrap::after,
+.contact .code-wrap::after {
+    left: 12%;
+}
+
+.contact .name-wrap::after {
+    width: 90%;
+}
+
+.contact .code-wrap::after {
+    width: 40%;
+}
+
+.contact .control-label {
+    color: #737373;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.contact .form-control {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 20px;
+    height: 40px;
+}
+
+.contact select.form-control {
+    float: left;
+    width: 75%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('../images/arrow-btm.png') no-repeat right center;
+}
+
+.contact .quan-group span {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.contact .add-wrap .control-label,
+.contact .code-wrap .control-label {
+    width: 12%;
+}
+
+.contact .code-img {
+    text-align: right;
+}
+
+.contact .btn-wrap {
+    margin-left: 3%;
+}
+
+.contact .btn {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 300;
+    background-color: #84c0ea;
+    border-radius: 0;
+    width: 150px;
+    height: 45px;
+    transition: all .3s ease;
+}
+
+.contact .btn:hover {
+    background-color: #00a0ea;
+}
+
+@media screen and (max-width: 1200px) {
+    .contact {
+        padding-top: 0;
+    }
+
+    .contact .control-label {
+        width: 28%;
+    }
+
+    .contact .form-wrap {
+        width: 72%;
+    }
+
+    .contact .name-wrap .control-label {
+        width: 20%;
+    }
+
+    .contact .name-wrap .form-wrap {
+        width: 80%;
+    }
+
+    .contact .add-wrap .control-label,
+    .contact .code-wrap .control-label {
+        width: 15%;
+    }
+
+    .contact .add-wrap .form-wrap,
+    .contact .code-wrap .form-wrap {
+        width: 85%;
+    }
+
+    .contact .code-input,
+    .contact .code-img {
+        width: 25%;
+    }
+
+    .contact .btn-wrap {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .contact form {
+        padding: 0 15px;
+        margin-bottom: 80px;
+        position: relative;
+    }
+
+    .contact .control-label,
+    .contact .name-wrap .control-label,
+    .contact .add-wrap .control-label,
+    .contact .code-wrap .control-label {
+        width: 20%;
+    }
+
+    .contact .form-wrap,
+    .contact .name-wrap .form-wrap,
+    .contact .add-wrap .form-wrap,
+    .contact .code-wrap .form-wrap {
+        width: 80%;
+    }
+
+    .contact .form-group {
+        height: 40px;
+        padding: 0;
+    }
+
+    .contact .form-group::after,
+    .contact .name-wrap::after,
+    .contact .add-wrap::after,
+    .contact .code-wrap::after {
+        width: 100%;
+        left: 0;
+    }
+
+    .contact .code-input,
+    .contact .code-img {
+        width: 35%;
+        text-align: center;
+    }
+
+    .contact .btn-wrap {
+        position: absolute;
+        bottom: -100px;
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .contact form {
+        margin-top: 80px;
+    }
+
+    .contact .form-group {
+        height: 80px;
+        margin-bottom: 30px;
+    }
+
+    .contact .control-label,
+    .contact .name-wrap .control-label,
+    .contact .add-wrap .control-label,
+    .contact .code-wrap .control-label {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+
+    .contact .form-wrap,
+    .contact .name-wrap .form-wrap,
+    .contact .add-wrap .form-wrap,
+    .contact .code-wrap .form-wrap {
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact .control-label {
+        font-size: 20px;
+    }
+
+    .contact .form-control,
+    .contact .quan-group span {
+        font-size: 18px;
+    }
+
+    .contact .code-input,
+    .contact .code-img {
+        display: inline-block;
+        width: 49%;
+    }
+}
+
+
+
+
+
+/* footer =============================================================================*/
+footer {
+    background-color: #90c6ec;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 1em;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #ffffff;
+}

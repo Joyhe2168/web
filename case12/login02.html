@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bubble Pink</title>
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <link href="images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" type="image/png" />
+    <link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+    <link href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Baumans" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <!--<link href="css/index.css" rel="stylesheet">-->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollup.js"></script>
+    <script src="js/jquery.twzipcode.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <script src="js/header.js"></script>
+    <section id="content">
+        <div class="container">
+            <div class="content login">
+                <div class="text-right close_btn"><a href="index.html"><img src="images/login-close.png" alt=""></a></div>
+                <h1 class="line"><img src="images/login.png" alt="">加入會員
+                    <p>歡迎加入Bubble Pink，我們將提供更多新粉紅商品資訊給您。</p>
+                </h1>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="name" class="col-sm-3 control-label">姓名 <span>*</span></label>
+                        <div class="col-sm-9">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="歐陽菲菲">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tel" class="col-sm-3 control-label">聯絡電話 <span>*</span></label>
+                        <div class="col-sm-9">
+                            <input type="tel" name="tel" id="tel" class="form-control" placeholder="0937-123321">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-3 control-label">電子信箱 <span>*</span></label>
+                        <div class="col-sm-9">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="service@mor-e.com.tw">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="col-sm-3 control-label">設定密碼 <span>*</span></label>
+                        <div class="col-sm-9">
+                            <input type="password" name="password" id="password" class="form-control" placeholder="********">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password2" class="col-sm-3 control-label">確認密碼 <span>*</span></label>
+                        <div class="col-sm-9">
+                            <input type="password" name="password2" id="password2" class="form-control" placeholder="********">
+                        </div>
+                    </div>
+                    <div class="form-group add">
+                        <label class="col-sm-3 control-label">地址</label>
+                        <div class="col-sm-9">
+                            <div id="twzipcode"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <input type="text" name="add" id="add" class="form-control" placeholder="台中市進化北路238號9樓之2">
+                        </div>
+                    </div>
+                    <div class="logingroup invoice">
+                        <p>需要開立三聯發票請填寫以下資訊。</p>
+                        <div class="form-group">
+                            <label for="password2" class="col-sm-3 control-label">統一發票</label>
+                            <div class="col-sm-9">
+                                <input type="password" name="password2" id="password2" class="form-control" placeholder="80055218">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password2" class="col-sm-3 control-label">發票抬頭</label>
+                            <div class="col-sm-9">
+                                <input type="password" name="password2" id="password2" class="form-control" placeholder="墨宇科技有限公司">
+                            </div>
+                        </div>
+                        <div class="checkbox text-left">
+                            <label>
+                                <input type="checkbox"> 我要訂閱最新優惠訊息
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-sm-3 col-xs-12 control-label">驗證碼 <span>*</span></label>
+                            <div class="col-sm-5 col-xs-8 code">
+                                <input type="text" name="code" id="code" class="form-control">
+                            </div>
+                            <div class="col-sm-4 col-xs-4 code">
+                                <img src="images/code.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="text-center">
+                    <p>&nbsp;</p>
+                    <a href="login03.html" class="btn">建 立 新 帳 戶</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="js/footer.js"></script>
+    <a id="contact" href="contact.html"><img src="images/contact.png"></a>
+    <script>
+        $("#twzipcode").twzipcode({
+            countySel: "臺中市", // 城市預設值, 字串一定要用繁體的 "臺", 否則抓不到資料
+            districtSel: "北區", // 地區預設值
+            zipcodeSel: "404", // 地區預設值
+            zipcodeIntoDistrict: false, // 郵遞區號自動顯示在地區
+            css: ["county form-control", "district form-control", "zipcode form-control"], // 自訂 "城市"、"地區" class 名稱 
+            countyName: "county", // 自訂城市 select 標籤的 name 值
+            districtName: "district", // 自訂地區 select 標籤的 name 值
+            zipcodeName: "zipcode" // 自訂地區 select 標籤的 name 值
+        });
+    </script>
+</body>
+
+</html>
